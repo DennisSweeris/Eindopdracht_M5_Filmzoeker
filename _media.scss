@@ -1,0 +1,72 @@
+// Media Queries
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0.5rem;
+    padding: 1rem 10rem;
+  }
+  .movies_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_menu {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    &-search,
+    &-found {
+      display: flex;
+      flex-direction: column;
+    }
+    &-search input {
+      padding: 1rem;
+    }
+    &-search button {
+      padding: 1rem;
+      margin: 1rem 0 0 0;
+    }
+    & div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding: 0.2rem;
+    }
+  }
+
+  .radio {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .movies_container {
+    margin: 0;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    font-size: 1.6rem;
+  }
+  img {
+    width: 25rem;
+    height: 40rem;
+  }
+}

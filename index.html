@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Searcher</title>
+    <script defer type="text/javascript" src="./database.js"></script>
+    <script defer type="text/javascript" src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Movie Searcher</h1>
+    </header>
+    <nav>
+      <div class="nav_menu">
+        <div>
+          <input type="radio" class="radio" id="new" name="movie-filter" value="new" />
+          <label for="new">New movies</label>
+        </div>
+        <div>
+          <input type="radio" class="radio" id="avengers" name="movie-filter" value="avengers" />
+          <label for="avengers">Avengers</label>
+        </div>
+        <div>
+          <input type="radio" class="radio" id="x-men" name="movie-filter" value="x-men" />
+          <label for="x-men">X-Men</label>
+        </div>
+        <div>
+          <input type="radio" class="radio" id="princess" name="movie-filter" value="princess" />
+          <label for="princess">Princess</label>
+        </div>
+        <div>
+          <input type="radio" class="radio" id="batman" name="movie-filter" value="batman" />
+          <label for="batman">Batman</label>
+        </div>
+        <div>
+          <input type="radio" class="radio" id="all" name="movie-filter" value="all" />
+          <label for="all">All movies</label>
+        </div>
+      </div>
+      <div class="nav_menu-search">
+        <input type="text" id="input-field" placeholder="Search..." />
+        <button id="search-btn">Search</button>
+        <div class="nav_menu-found"></div>
+      </div>
+    </nav>
+    <main>
+      <div class="movies_container">
+        <ul class="movies_container-list"></ul>
+      </div>
+    </main>
+
+    <button onclick="topPage()" id="topPageBtn" title="Go to top"></button>
+
+    <footer>
+      <div class="footer-info">
+        <p>Copyright © 2021 Dennis Sweeris</p>
+      </div>
+      <ul>
+        <li>
+          <a href="https://linkedin.com/DennisSweeris" target="_blank" rel="noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/DennisSweeris" target="_blank" rel="noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
