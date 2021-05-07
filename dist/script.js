@@ -17,6 +17,7 @@ const targetUrl = "https://www.imdb.com";
 window.addEventListener("scroll", () => scrollFunction());
 inputField.addEventListener("keypress", () => returnSearch());
 searchButton.addEventListener("click", () => returnSearch());
+toTopBtn.addEventListener("click", () => (document.documentElement.scrollTop = 0));
 
 // Filters, optimzed search
 const newMovies = movies.filter(movie => movie.Year >= recentMovieYear);
@@ -75,7 +76,6 @@ const scrollFunction = () => {
     ? (toTopBtn.style.display = "block")
     : (toTopBtn.style.display = "none");
 };
-const topPage = () => (document.documentElement.scrollTop = 0);
 
 // initialize function to control everything at the start of everything
 const renderPage = list => {

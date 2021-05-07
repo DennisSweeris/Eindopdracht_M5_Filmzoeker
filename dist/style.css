@@ -116,14 +116,15 @@ input {
 }
 .movies_container-list li {
   place-self: center;
+  transition: transform 150ms ease;
+}
+.movies_container-list li:hover {
+  transform: scale(1.05);
+  z-index: 2;
 }
 .movies_container-list img {
   width: 30rem;
   height: 45rem;
-  transition: transform 150ms ease;
-}
-.movies_container-list img:hover {
-  transform: scale(1.125);
 }
 
 #topPageBtn {

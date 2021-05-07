@@ -123,14 +123,15 @@ input {
     z-index: 1;
     & li {
       place-self: center;
+      transition: transform 150ms ease;
+      &:hover {
+        transform: scale(1.05);
+        z-index: 2;
+      }
     }
     & img {
       width: 30rem;
       height: 45rem;
-      transition: transform 150ms ease;
-      &:hover {
-        transform: scale(1.125);
-      }
     }
   }
 }
